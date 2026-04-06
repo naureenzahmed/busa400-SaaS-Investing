@@ -286,6 +286,213 @@ nav { padding: 20px 0 32px; flex: 1; }
   max-width: 480px;
 }
 
+/* ── Section content body ───────────────────────────────────── */
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.content-section {
+  border-top: 1px solid var(--c-border);
+  padding-top: 48px;
+}
+
+.content-section-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  margin-bottom: 40px;
+}
+
+.content-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--c-text);
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin-top: 44px;
+  margin-bottom: 16px;
+}
+
+.content-section > p,
+.content-section > .content-methods > .content-method > p,
+.content-section > .content-stages > .content-stage > p {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--c-mid);
+  font-weight: 300;
+  max-width: 640px;
+  margin-bottom: 14px;
+}
+
+.content-section p {
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--c-mid);
+  font-weight: 300;
+  max-width: 640px;
+  margin-bottom: 14px;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-list li {
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--c-mid);
+  font-weight: 300;
+  padding-left: 20px;
+  position: relative;
+}
+
+.content-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--c-accent);
+  font-size: 12px;
+  top: 4px;
+}
+
+.content-list li strong {
+  color: var(--c-text);
+  font-weight: 500;
+}
+
+.content-quote {
+  border-left: 2px solid var(--c-accent);
+  margin: 32px 0;
+  padding: 12px 0 12px 24px;
+  max-width: 580px;
+}
+
+.content-quote p,
+.content-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--c-text);
+  line-height: 1.6;
+}
+
+.content-quote cite {
+  display: block;
+  margin-top: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--c-light);
+}
+
+.content-callout {
+  background: var(--c-mark);
+  border-left: 2px solid var(--c-accent);
+  padding: 20px 24px;
+  margin: 28px 0;
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--c-text);
+  font-weight: 400;
+}
+
+.content-callout-source {
+  margin-top: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-light);
+}
+
+/* Stages */
+.content-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 28px 0;
+  max-width: 640px;
+  border-top: 1px solid var(--c-border);
+}
+
+.content-stage {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--c-border);
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 24px;
+}
+
+.stage-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-accent);
+  padding-top: 3px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.stage-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--c-text);
+  margin-bottom: 8px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.content-stage p {
+  grid-row: 2;
+  grid-column: 2;
+  margin-bottom: 0;
+}
+
+/* Methods */
+.content-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 28px;
+}
+
+.content-method {
+  max-width: 640px;
+}
+
+.method-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--c-text);
+  margin-bottom: 10px;
+  letter-spacing: 0.005em;
+}
+
+.content-method p { margin-bottom: 10px; }
+
 /* ── Mobile ─────────────────────────────────────────────────── */
 #hamburger {
   display: none;
