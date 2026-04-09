@@ -949,10 +949,92 @@
     <div class="section-page" id="wp1-case">
       <div class="section-eyebrow">White Paper I &nbsp;/&nbsp; Case Study</div>
       <h1 class="section-title" data-text="Dive into Mecka.AI">Dive into Mecka.AI</h1>
-      <div class="content-placeholder">
-        <div class="placeholder-rule"></div>
-        <div class="placeholder-label">In progress</div>
-        <div class="placeholder-body">Content will be published here.</div>
+      <div class="section-content">
+
+        <div class="content-section">
+          <h2 class="content-section-title">Company Overview</h2>
+          <div class="content-stages">
+            <div class="content-stage"><div class="stage-label">Location</div><div class="stage-title">Toronto, Canada</div><p>Founded 2024. Seed stage.</p></div>
+            <div class="content-stage"><div class="stage-label">Raised</div><div class="stage-title">$8M Seed</div><p>Lead: Neo (Ali Partovi). Co-investors: SV Angel, A* Capital, Cade Ventures, Timeless, Offline VC.</p></div>
+          </div>
+          <p>Mecka launched from stealth in August 2025 to build the data layer for physical AI. The thesis was that humanoid robots are bottlenecked by a shortage of high-quality, real-world human movement data. The company positions itself as the Scale AI for robotics, collecting and labeling egocentric video of physical tasks the same way Scale built labeled datasets for LLMs. Meta's $14B+ acquisition of a major stake in Scale in 2025 validated that market analogy at scale.</p>
+          <p>Mecka is also a named industry partner on EgoVerse, an open-source egocentric manipulation dataset developed with Stanford, UCSD, ETH Zurich, Scale AI, and Meta Reality Labs Research, giving the company academic credibility beyond its seed stage.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What is the Solution and Product?</h2>
+          <p>Mecka operates a two-sided pipeline, all managed and qualified by a data-labeling software designed to be hardware aware. On the supply side, it recruits workers (baristas, mechanics, cooks) to film physical tasks via smartphone or proprietary hardware rigs. On the demand side, it sells annotated, anonymized multimodal datasets to robotics companies for training vision-language-action (VLA) models and world models. Once the data is filmed, it goes through software that grades and labels the data before sending it off to the labs.</p>
+          <p>Two tiers of data are collected:</p>
+          <ul class="content-list">
+            <li><strong>Standard:</strong> Gamified daily quests via mobile app (making a bed, folding laundry), filmed on smartphone, users earn cash.</li>
+            <li><strong>Enterprise:</strong> Bespoke capture runs using proprietary rigs, shipped to vetted operators for high-complexity motor tasks.</li>
+          </ul>
+          <p>The dataset has surpassed 30,000 hours of human movement video, claimed to be the largest proprietary dataset of its kind. 1X Technologies used Mecka footage directly in generating its World Model. The moat is the full-stack pipeline: recording, annotation, anonymization, and delivery in one.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">Who is on the Team?</h2>
+          <div class="content-methods">
+            <div class="content-method">
+              <div class="method-title">Josh Gao, CEO</div>
+              <p>Ivey Business School. Second-time founder; prior ghost kitchen software exit (2023) and Binko Chat, an AI translation app (10,000 downloads in first weeks).</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">Jason Chong, CTO</div>
+              <p>Co-founder and CTO of Utopia Labs through its Coinbase acquisition. Data infrastructure background directly informs Mecka's pipeline architecture.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">Duy Nguyen (COO), Mogen Cheng (CPO), Kevin Hu and Anthony Tat (founding engineers)</div>
+              <p>Long-term collaborators. Research adviser Animesh Garg (robotics expert) provides domain credibility. The team has no formal robotics research background, which they frame as a commercial advantage over lab-centric competitors.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What is the Customers and Traction?</h2>
+          <ul class="content-list">
+            <li><strong>1X Technologies:</strong> Paying partner; Mecka footage used in production World Model training.</li>
+            <li><strong>Undisclosed Fortune 100 enterprise contracts</strong> across custom capture projects.</li>
+            <li><strong>Named industry partner on EgoVerse</strong> alongside Stanford, UCSD, ETH Zurich, Scale AI, and Meta Reality Labs Research.</li>
+            <li><strong>Lead investor Suzanne Xie (Neo)</strong> cited dataset scale and execution speed as primary investment rationale.</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What Does the Market Analysis Show?</h2>
+          <p>Scientists and researchers believe that the humanoid robot market is projected to reach $35B by 2033 at a 48.9% CAGR. However, the broader physical AI market was only $3.78B in 2024, projected at $68B by 2034 (33.5% CAGR). Investors and institutions are bullish on the space as Morgan Stanley estimates the long-run humanoid market at $5 trillion by 2050. Every company in this stack needs training data it cannot collect fast enough in-house.</p>
+          <p>TAM evaluation must account for where the market goes as the company itself grows, not just where it is today. Mecka AI is creating a market for data labeling for world models. This was proven in a parallel space as Physical Intelligence's pi-zero-point-five model, which generalized to new environments without prior training, validated that data diversity and breadth, not just compute, drive generalization. That is Mecka's market thesis made attainable.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">Who is the Competition?</h2>
+          <div class="content-methods">
+            <div class="content-method">
+              <div class="method-title">Physical Intelligence (Pi)</div>
+              <p>$1.1B raised, $5.6B valuation. Collects data in-house. Validates the data-quality thesis but is a potential customer, not a direct competitor.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">Hugging Face LeRobot</div>
+              <p>Open-source robotics dataset platform. High volume, inconsistent quality. Mecka differentiates on annotation depth and custom enterprise capture.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">Scale AI</div>
+              <p>The benchmark Mecka aspires to reach. Does robotics annotation but does not operate its own real-world human capture network.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">In-house collection (Figure, Agility, Tesla Optimus)</div>
+              <p>The primary structural risk. Mecka's counter is context diversity (homes, job sites, kitchens) that no single lab replicates at scale.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What is the Growth Potential?</h2>
+          <p>The humanoid robotics sector received over $2B in disclosed funding in 2024 alone, with Figure AI seeking a $39.5B valuation and Apptronik raising $350M in its Series A. Each of these companies is a potential Mecka customer. The pitch is the same one Scale made to LLM developers five years ago: outsource the data pipeline so the model team can focus on the model.</p>
+          <p>The unit economics of a data business improve with scale. Once annotation infrastructure is built, the marginal cost of adding capture hours falls while cumulative dataset value grows. The key metric to watch is dataset NDR: do customers return, and does contract value expand as Mecka's data is integrated deeper into training pipelines? The ICONIQ SaaS Glossary treats LTV:CAC above 3x as the floor for a structurally viable data business. Mecka has not disclosed customer economics publicly.</p>
+          <p>The last major risks are that the founding team has no formal robotics background, in-house data collection at major labs remains a permanent structural threat, and whether commercial egocentric video generalizes better than synthetic data from simulation is still an open research question. The EgoVerse collaboration and 1X's production use of Mecka footage are the strongest current indicators that the data-from-humans approach is working.</p>
+        </div>
+
       </div>
     </div>
 
@@ -1028,10 +1110,92 @@
     <div class="section-page" id="wp2-case">
       <div class="section-eyebrow">White Paper II &nbsp;/&nbsp; Case Study</div>
       <h1 class="section-title" data-text="Dive into General Magic">Dive into General Magic</h1>
-      <div class="content-placeholder">
-        <div class="placeholder-rule"></div>
-        <div class="placeholder-label">In progress</div>
-        <div class="placeholder-body">Content will be published here.</div>
+      <div class="section-content">
+
+        <div class="content-section">
+          <h2 class="content-section-title">Company Overview</h2>
+          <div class="content-stages">
+            <div class="content-stage"><div class="stage-label">Location</div><div class="stage-title">Toronto, Canada</div><p>Founded 2024. Seed stage.</p></div>
+            <div class="content-stage"><div class="stage-label">Raised</div><div class="stage-title">$8.4M Seed</div><p>Lead: Radical Ventures ($2.5B AUM). Co-investors: a16z Speedrun, Comma Capital, Aidan Gomez (Cohere CEO).</p></div>
+          </div>
+          <p>General Magic completed a16z Speedrun in mid-2025 as the only Canadian company in the cohort. The team narrowed their ICP to insurance after co-founder Jai Mansukhani had a water leak that spiralled into weeks of calls, delays, and a premium increase. That experience surfaced a structural flaw: insurance workflows technically work, but consistently fail at the moments of highest customer friction.</p>
+          <p>When diving further into the issues, the founders saw that global insurtech investment rose 19.5% to $5.08 billion in 2025, with AI-centred companies capturing nearly 78% of Q4 2025 funding. McKinsey's July 2025 research found that AI leaders in insurance have generated 6.1x the total shareholder return of laggards over five years. This demonstrates tailwinds showing that there is a gap consumers want filled through new technologies.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What is the Solution and Product?</h2>
+          <p>The core product is Cell, a proactive AI agent that plugs into the insurance team's existing broker management systems, quoting platforms, and CRMs, then communicates with customers entirely over SMS, iMessage, or RCS. Through the customer's text, Cell pulls live data, requests missing details, follows up automatically, and pushes updates back into core systems in a single persisting thread.</p>
+          <p>Cell operates across three phases:</p>
+          <ul class="content-list">
+            <li><strong>Pre-quote:</strong> Eligibility checks, intent capture, initial information collection.</li>
+            <li><strong>Post-quote:</strong> Automated follow-up, document collection, keeping customers engaged through the highest drop-off window.</li>
+            <li><strong>Claims:</strong> Coordination, document requests, status updates, escalation.</li>
+          </ul>
+          <p>The compliance layer is the hardest part most competitors get wrong. General Magic trains agents on insurance licensing frameworks (RIBO, OTL, and other broker exams) so that agent language mirrors how licensed professionals are actually required to communicate coverage, keeping every interaction regulatorily sound.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">Who is on the Team?</h2>
+          <div class="content-methods">
+            <div class="content-method">
+              <div class="method-title">Jai Mansukhani, Co-founder and President</div>
+              <p>Second-time founder. Previously built and exited AI products sold into legacy industries. The insurance pivot originated directly from his personal claims experience.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">Anthony Azrak, Co-founder</div>
+              <p>Also a second-time founder with prior exits in AI applied to entrenched sectors. One of his previous businesses included a marketplace for engineers which he scaled to dozens of engineers, demonstrating his CEO abilities from an early age. The pair entered a16z Speedrun as a general-purpose AI platform before pivoting with conviction into insurance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What is the Customers and Traction?</h2>
+          <ul class="content-list">
+            <li><strong>Deployed with one of the world's largest general insurers</strong> across auto and life lines.</li>
+            <li><strong>Time-to-quote reduced</strong> from roughly 30 minutes to under 3 minutes via SMS automation.</li>
+            <li><strong>Inbound calls down 30%</strong> in early rollouts.</li>
+            <li><strong>Teams saving 250+ hours per month</strong> on routine coordination.</li>
+            <li><strong>Agent deployable in under 5 minutes</strong> into existing broker infrastructure.</li>
+          </ul>
+          <div class="content-quote">They are building a truly compelling product that we believe will revolutionise workflows across insurance carriers and brokerages globally.<cite>Troy Kirwin, Investment Partner at a16z Speedrun</cite></div>
+          <p>The team does not publicize any customers officially.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What Does the Market Analysis Show?</h2>
+          <p>At a macro level, the global insurtech market was valued at $19.06 billion in 2025 and is projected to reach $132.71 billion by 2034 at a 24.1% CAGR. When narrowing to AI-for-insurance, it is projected to hit $35.8 billion by 2029 at a 36% CAGR. This demonstrates General Magic's wedge to grow toward unicorn status.</p>
+          <p>The structural opportunity is in the customer engagement layer. Post-quote drop-off is one of the highest-cost failure points in personal lines insurance. Customers who receive a quote and then go silent represent revenue already won at the sales and marketing level. General Magic's position is exactly at that inflection point. A carrier that has never measured post-quote engagement or drop-off rate does not currently know how much revenue it is losing. Cell makes that visible and recoverable.</p>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">Who is the Competition?</h2>
+          <div class="content-methods">
+            <div class="content-method">
+              <div class="method-title">Lemonade</div>
+              <p>Consumer-facing AI-native insurer. Handles roughly 40% of claims instantly via its AI bot Jim. Direct-to-consumer, not a B2B workflow tool. Different stack and buyer.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">FurtherAI</div>
+              <p>a16z-backed ($25M Series A, Oct 2025), focused on back-office workflow automation. General Magic targets the opposite end: customer-facing engagement where follow-through fails.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">Telnyx</div>
+              <p>Provides programmable voice and messaging infrastructure. A platform, not a domain-specific insurance agent. Lacks the compliance training and BMS integrations that General Magic has built.</p>
+            </div>
+            <div class="content-method">
+              <div class="method-title">In-house chatbots and portal messaging by incumbents</div>
+              <p>The most common competitive objection. General Magic's counter is that internal builds require IT bandwidth, lack compliance calibration, and create parallel workflows rather than pushing back into core systems.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2 class="content-section-title">What is the Growth Potential?</h2>
+          <p>General Magic's go-to-market follows the logic characteristic of durable SaaS growth: land at a high-friction, high-intent workflow to demonstrate measurable ROI, then expand across adjacent workflows and lines. The entry point is post-quote engagement in auto and life. The expansion path runs through renewals, claims coordination, and ultimately multi-line carriers at enterprise scale.</p>
+          <p>The unit economics logic is compelling. Insurance customer acquisition costs are 5 to 7x higher than retention costs. Every post-quote conversation Cell saves from drop-off improves effective close rate without adding to CAC. That arithmetic means General Magic improves the client's P&L before it charges them. The ICONIQ SaaS Glossary frames NDR above 110% as the signal of genuine value creation in SaaS. General Magic's expansion thesis, from post-quote into claims and renewals within the same carrier, is the mechanism for driving that expansion revenue.</p>
+          <p>The risk is that insurance incumbents are notoriously slow adopters, and regulatory compliance requirements (RIBO, OTL, state licensing) create real friction for every new deployment. General Magic's compliance-aware agent training is designed to address this directly, but enterprise sales cycles in insurance are long and the ROI conversation requires education.</p>
+        </div>
+
       </div>
     </div>
 
@@ -1142,8 +1306,32 @@
     window.addEventListener('hashchange', routeFromHash);
     routeFromHash();
 
+    // ── Sources data ───────────────────────────────────────────
+    const SOURCES = {
+      'overview': [
+        'Almubarak, N., &amp; Dimov, D. (2022). Value Adding in Venture Capital as a Mesh of Practices. <em>International Journal of Entrepreneurial Behavior &amp; Research</em>, 28(9), 427–447. https://doi.org/10.1108/ijebr-03-2022-0283',
+        'Deakers, C. (2025, October 29). Inside Bessemer\'s operating model. <em>Bessemer Venture Partners</em>. https://www.bvp.com/atlas/inside-bessemers-operating-model',
+        'Gompers, P. A., Gornall, W., Kaplan, S. N., &amp; Strebulaev, I. A. (2020). How do venture capitalists make decisions? <em>Journal of Financial Economics</em>, 135(1), 169–190. https://doi.org/10.1016/j.jfineco.2019.06.011',
+        'Portfolio Construction: How to Build a Fund Strategy. (2026). <em>Carta</em>. https://carta.com/learn/private-funds/management/portfolio-management/portfolio-construction/',
+        'Referral networks are the best way to find investment opportunities. (2019). <em>Zapflow</em>. https://www.zapflow.com/resources/news-blog/why-referral-networks-are-the-best-way-to-find-investment-opportunities',
+        'Taylor, D. (2021, April). 92% of VCs say they offer value beyond capital; founders reply, "mmm yeah no." <em>Tech.eu</em>. https://tech.eu/2021/04/01/92-of-vcs-say-they-offer-value-beyond-capital-founders-reply-mmm-yeah-no/',
+        'Venture Fund Portfolio Construction. (2021). <em>Kauffman Fellows Journal</em>. https://www.kauffmanfellows.org/journal/venture-fund-portfolio-construction',
+        'Zhou, R. (2025, July 7). Understanding How VCs Can Optimize Portfolio Support. <em>Forbes</em>. https://www.forbes.com/councils/forbestechcouncil/2025/07/07/understanding-how-vcs-can-optimize-portfolio-support/'
+      ]
+    };
+
     // ── Sources footer ─────────────────────────────────────────
     document.querySelectorAll('.section-page').forEach(page => {
+      const pageId = page.id;
+      const entries = SOURCES[pageId];
+      let bodyHTML;
+      if (entries && entries.length) {
+        const items = entries.map(s => `<li>${s}</li>`).join('');
+        bodyHTML = `<ul class="sources-list">${items}</ul>`;
+      } else {
+        bodyHTML = `<p class="sources-empty">No sources listed for this section yet.</p>`;
+      }
+
       const footer = document.createElement('div');
       footer.className = 'sources-footer';
       footer.innerHTML = `
@@ -1155,7 +1343,7 @@
           <div class="sources-panel-inner">
             <div class="sources-panel-body">
               <div class="sources-panel-label">References</div>
-              <p class="sources-empty">No sources listed for this section yet.</p>
+              ${bodyHTML}
             </div>
           </div>
         </div>
